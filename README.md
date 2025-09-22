@@ -8,8 +8,7 @@ E-COMMERCE STORE DATABASE MANAGEMENT SYSTEM
 
 **Author:** Edris Abdella  
 **Created:** 21-09-2025  
-**Technology:** MySQL  
-**Project Type:** Relational E-commerce Database Management System  
+**Technology:** MySQL 
 
 ---
 
@@ -59,7 +58,7 @@ Relationships are mostly **one-to-many**:
 
 This diagram illustrates the relationships and primary/foreign keys between all tables.
 
----
+
 
 ## Tables and Structure
 
@@ -84,12 +83,13 @@ CREATE TABLE products (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (category_id) REFERENCES categories(category_id)
 );
-
+---
 (Other tables: categories, orders, order_items, payments, reviews—structure available in database.sql)
 
+---
 Query Results
 
-Here are the results of some key queries from the ecommerce_store database:
+Here are the results of some key queries from the ecommerce_store database: you can select
 
 Products Query
 
@@ -103,6 +103,7 @@ Reviews Query
 
 SELECT * FROM reviews;
 
+---
 Setup Instructions
 
 1. Clone the Repository
@@ -118,10 +119,12 @@ USE ecommerce_store;
 mysql -u <username> -p ecommerce_store < database.sql
 
 4. Query the tables using MySQL Workbench, Terminal, or your preferred client.
+---
 
 License
 
 This project is open-source and free to use for educational purposes.
+---
 
 For any questions, contact Edris Abdella.
 
